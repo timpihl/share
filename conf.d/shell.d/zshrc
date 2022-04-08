@@ -1,0 +1,19 @@
+#
+# Toker
+#
+
+export ZSH="/root/.oh-my-zsh"
+export PS1="%d %% "
+export LC_ALL=en_US.UTF-8
+PROMPT=${PROMPT/\%c/\%~}
+
+ZSH_THEME="robbyrussell"
+DISABLE_UPDATE_PROMPT="true"
+HIST_STAMPS="yyyy/mm/dd"
+source $ZSH/oh-my-zsh.sh
+
+plugins=(git)
+
+cd /
+
+source /toker/share/conf.d/aliases.sh
