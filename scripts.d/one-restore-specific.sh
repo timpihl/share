@@ -12,4 +12,3 @@ rsync   --human-readable \
 	--archive \
 	--delete \
 	$path/$d $dest | lolcat
-
